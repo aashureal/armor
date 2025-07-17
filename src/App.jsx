@@ -1,11 +1,8 @@
-import MainRoutes from "./routes/MainRoutes";
+import React from "react";
+import Home from "./pages/Home";
 
 const App = () => {
-  return (
-    <>
-      <MainRoutes />
-    </>
-  );
+  return <Home />;
 };
 
 export default App;
