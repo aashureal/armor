@@ -10,7 +10,11 @@ const Home = () => {
             <h2 className="main__heading">armor</h2>
           </div>
 
-          <img src="/hero1.png" alt="" className="hero__img floating" />
+          <div className="hero__img floating">
+          <img src="/hero1.png" alt="" className="" />
+          <div className="overlay"></div>
+
+          </div>
         </div>
         <div className="bottom part">
           <h2 className="heading">
