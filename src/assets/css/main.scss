@@ -5,6 +5,11 @@
   src: url("../fonts/Roobert-Regular.woff2");
 }
 
+@font-face {
+  font-family: Neotriad;
+  src: url("../fonts/Neotriad.woff2");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -25,7 +30,25 @@ button {
   cursor: pointer;
   font-size: inherit;
   font-family: inherit;
+  background-color: transparent;
 }
 
-@import "./pages/Home";
+// Utilities
+@import "./utils/Variables";
+@import "./utils/Classes";
+
+// Components
 @import "./components/Header";
+
+// Pages
+@import "./pages/Home";
+
+.orange__text {
+  color: $color-orange;
+}
+
+span {
+  font-family: inherit;
+  display: inline-block;
+  font-size: inherit;
+}

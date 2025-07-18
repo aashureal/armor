@@ -3,30 +3,28 @@ import React from "react";
 const Home = () => {
   return (
     <div className="pHome">
-      <div className="inner">
-        <div className="image__group">
-          {/* <div className="image__part image__part__1 ">
-            <img
-              src="https://ik.imagekit.io/cfmixl0nl/armor-files/i3.jpg"
-              alt=""
-            />
-          </div> */}
-          <div className="image__part image__part__2 ">
-            <img
-              src="https://ik.imagekit.io/cfmixl0nl/armor-files/i7.jpg"
-              alt=""
-            />
+      {/* Hero Section */}
+      <section className="sHero">
+        <div className="top part">
+          <div className="txt__box">
+            <h2 className="main__heading">armor</h2>
           </div>
-          {/* <div className="image__part image__part__3 ">
-            <img
-              src="https://ik.imagekit.io/cfmixl0nl/armor-files/i1.jpg"
-              alt=""
-            />
-          </div> */}
-        </div>
 
-        <div className="bottom__group"></div>
-      </div>
+          <img src="/hero1.png" alt="" className="hero__img floating" />
+        </div>
+        <div className="bottom part">
+          <h2 className="heading">
+            Crown of <span className="orange__text">Sound</span>
+          </h2>
+
+          <p className="para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
+            voluptas.
+          </p>
+
+          <button className="cta">Explore</button>
+        </div>
+      </section>
     </div>
   );
 };

@@ -1,40 +1,222 @@
+// .pHome {
+//   width: 100%;
+//   min-height: 100vh;
+//   // background-color: red;
+
+//   // Hero Section Styles
+//   .sHero {
+//     width: 100%;
+//     height: 100vh;
+//     // background-color: $color-orange;
+
+//     .inner {
+//       width: 100%;
+//       height: 100%;
+//       display: flex;
+//       align-items: center;
+//       justify-content: center;
+//       position: relative;
+
+//       .main__heading {
+//         font-size: 30vw;
+//         font-family: Neotriad;
+//         // background-color: red;
+//         width: max-content;
+//         line-height: 20vw;
+//         color: $color-orange;
+//       }
+
+//       .hero__img {
+//         position: absolute;
+//         // background-color: red;
+//         width: 25vw;
+//       }
+//     }
+//   }
+// }
+// .header {
+//   height: 4rem;
+//   // background-color: lightblue;
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+//   padding: 0 1.4rem;
+
+//   .logo {
+//     font-family: Neotriad;
+//     text-transform: uppercase;
+//     font-size: 2rem;
+//   }
+
+//   .menu__btn {
+//     width: 1rem;
+//     height: 1rem;
+//     background-color: #000;
+//     border-radius: 50%;
+//   }
+// }
+
+// .pHome1 {
+//   width: 100%;
+//   min-height: 100vh;
+//   background-color: #000;
+//   color: #fff;
+//   overflow-x: hidden;
+
+//   // Hero Section Styles
+//   .sHero {
+//     width: 100%;
+//     height: 100vh;
+//     position: relative;
+//     // background-color: $color-orange;
+
+//     .inner {
+//       width: 100%;
+//       height: 50%;
+//       display: flex;
+//       align-items: center;
+//       justify-content: center;
+//       position: relative;
+//       // background-color: red;
+//       padding-top: 2rem;
+
+//       .main__heading {
+//         font-size: 30vw;
+//         font-family: Neotriad;
+//         // background-color: red;
+//         width: max-content;
+//         line-height: 20vw;
+//         color: $color-orange;
+//         text-align: center;
+//         text-transform: uppercase;
+//         text-shadow: rgba(240, 105, 56, 0.59) 0px 0px 104px;
+//         // margin-bottom: 7rem;
+//       }
+
+//       .hero__img {
+//         position: absolute;
+//         // background-color: red;
+//         width: 47vw;
+//       }
+//     }
+
+//     .overlay {
+//       position: absolute;
+//       z-index: 11;
+//       width: 100%;
+//       height: 100%;
+//       background-color: rgba(2, 2, 2, 0.12);
+//       top: 0;
+//       left: 0;
+//     }
+//   }
+// }
+
+// @media (min-width: 1080px) {
+//   .pHome {
+//     // Hero Section Styles
+//     .sHero {
+//       width: 100%;
+//       height: 100vh;
+
+//       // background-color: $color-orange;
+
+//       .inner {
+//         height: 100%;
+//         padding-top: 0rem;
+
+//         .hero__img {
+//           position: absolute;
+//           // background-color: red;
+//           width: 25vw;
+//         }
+//       }
+//     }
+//   }
+// }
+
 .pHome {
   width: 100%;
-  height: 100vh;
-  padding: 4.5rem 1rem 0rem 1rem;
+  min-height: 100vh;
   background-color: #000;
+  color: #dadada;
 
-  .inner {
+  // Hero Section
+  .sHero {
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+    // background-color: royalblue;
+    gap: 1erm;
 
-    .image__group {
+    .part {
       width: 100%;
-      height: calc(100% - 4rem);
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      .image__part {
-        //   background-color: royalblue;
-        border-radius: 2rem;
-        overflow: hidden;
-        flex: 1;
+      // background-color: crimson;
+      padding: 0 1.5rem;
+    }
 
-        img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          object-position: center;
+    .part.top {
+      // background-color: royalblue;
+
+      margin-top: 5rem; // For Header
+      height: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .hero__img {
+        position: absolute;
+        width: 45vw;
+      }
+
+      .txt__box {
+        display: flex;
+        align-items: center; // End This is PC
+        justify-content: center;
+
+        // background-color: red;
+        width: 100%;
+        height: 100%;
+
+        .main__heading {
+          font-family: Neotriad;
+          font-size: 30vw;
+          text-align: center;
+          // background-color: black;
+          line-height: 20vw;
         }
       }
     }
+    .part.bottom {
+      // background-color: rgb(54, 255, 238);
+      height: calc(100% - 50%);
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
 
-    .bottom__group {
-      height: 4rem;
-      width: 100%;
+      .heading {
+        font-size: 13vw;
+        line-height: 12vw;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+      .para {
+        margin: 1rem 0;
+        line-height: 1rem;
+      }
 
-      //   background-color: red;
+      .cta {
+        background-color: $color-orange;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        width: 100%;
+      }
     }
   }
 }
