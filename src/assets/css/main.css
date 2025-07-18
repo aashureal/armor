@@ -31,7 +31,7 @@ button {
 
 .floating {
   animation-name: floating;
-  animation-duration: 2s;
+  animation-duration: 4s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
   margin-left: 0px;
@@ -62,6 +62,10 @@ button {
 .header .logo {
   font-family: Neotriad;
   font-size: 2rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .header .header__btn.menu {
   background-color: #f46928;
@@ -70,6 +74,11 @@ button {
   border-radius: 50%;
 }
 
+@media (min-width: 1080px) {
+  .header {
+    padding: 0 4rem;
+  }
+}
 .pHome {
   width: 100%;
   min-height: 100vh;
@@ -123,17 +132,52 @@ button {
   text-transform: uppercase;
   font-weight: bold;
 }
-.pHome .sHero .part.bottom .para {
+.pHome .sHero .part.bottom .rp .para {
   margin: 1rem 0;
   line-height: 1rem;
 }
-.pHome .sHero .part.bottom .cta {
+.pHome .sHero .part.bottom .rp .cta {
   background-color: #f46928;
   padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
   width: 100%;
 }
 
+@media (min-width: 1080px) {
+  .pHome .sHero .part {
+    padding: 0 4rem;
+  }
+  .pHome .sHero .part.top {
+    height: 70%;
+  }
+  .pHome .sHero .part.top .hero__img {
+    width: 25vw;
+    margin-top: 5rem;
+  }
+  .pHome .sHero .part.top .txt__box {
+    align-items: center;
+  }
+  .pHome .sHero .part.bottom {
+    height: 30%;
+    padding-bottom: 3rem;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .pHome .sHero .part.bottom .heading {
+    font-size: 7vw;
+    line-height: 6vw;
+    width: 50%;
+  }
+  .pHome .sHero .part.bottom .rp {
+    margin-right: 10%;
+  }
+  .pHome .sHero .part.bottom .rp .para {
+    line-height: 1rem;
+    width: 20rem;
+  }
+  .pHome .sHero .part.bottom .rp .cta {
+    width: 20rem;
+  }
+}
 .orange__text {
   color: #f46928;
 }

@@ -17,12 +17,13 @@ const Home = () => {
             Crown of <span className="orange__text">Sound</span>
           </h2>
 
-          <p className="para">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
-            voluptas.
-          </p>
+          <div className="rp">
+            <p className="para">
+              Presenting you the world’s <span className="orange__text">coolest</span> headphones
+            </p>
 
-          <button className="cta">Explore</button>
+            <button className="cta">Explore</button>
+          </div>
         </div>
       </section>
     </div>
